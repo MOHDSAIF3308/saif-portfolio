@@ -1,19 +1,17 @@
 .nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 100;
-  transition: background 0.2s, border-color 0.2s;
-  padding: 18px 0;
+  padding: 20px 0;
+  transition: background 0.2s, box-shadow 0.2s, padding 0.2s;
 }
 
 .scrolled {
-  background: rgba(13, 15, 20, 0.92);
+  background: rgba(255,255,255,0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--c-border);
-  padding: 12px 0;
+  box-shadow: 0 1px 0 var(--c-border), 0 4px 24px rgba(0,0,0,0.05);
+  padding: 14px 0;
 }
 
 .inner {
@@ -31,9 +29,7 @@
   letter-spacing: -0.02em;
 }
 
-.dot {
-  color: var(--c-accent);
-}
+.dot { color: var(--c-accent); }
 
 .links {
   display: flex;
@@ -44,26 +40,27 @@
 
 .links a {
   font-size: 14px;
+  font-weight: 500;
   color: var(--c-text-2);
   transition: color 0.15s;
 }
 
-.links a:hover {
-  color: var(--c-text);
-}
+.links a:hover { color: var(--c-accent); }
 
 .navCta {
   font-size: 13px !important;
-  font-weight: 500 !important;
-  color: var(--c-bg) !important;
-  background: var(--c-accent);
-  padding: 8px 18px;
-  border-radius: var(--radius-sm);
-  transition: opacity 0.15s !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  background: var(--c-accent) !important;
+  padding: 9px 20px !important;
+  border-radius: var(--radius-sm) !important;
+  transition: opacity 0.15s, transform 0.15s !important;
+  box-shadow: 0 4px 14px rgba(108,99,255,0.30) !important;
 }
 
 .navCta:hover {
-  opacity: 0.88;
+  opacity: 0.9 !important;
+  transform: translateY(-1px) !important;
 }
 
 .burger {
@@ -91,28 +88,18 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
+    left: 0; right: 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    background: var(--c-surface);
+    background: #fff;
     border-bottom: 1px solid var(--c-border);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     padding: 12px 24px 20px;
   }
 
   .links.open { display: flex; }
-
   .links li { width: 100%; }
-
-  .links a {
-    display: block;
-    padding: 10px 0;
-    font-size: 15px;
-  }
-
-  .navCta {
-    margin-top: 8px;
-    display: inline-block;
-  }
+  .links a { display: block; padding: 10px 0; font-size: 15px; }
+  .navCta { margin-top: 8px; display: inline-block; }
 }

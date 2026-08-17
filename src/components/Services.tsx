@@ -14,9 +14,16 @@ export default function Services() {
         <div className={styles.grid}>
           {siteData.services.map((s, i) => (
             <div key={i} className={styles.card}>
-              <div className={styles.icon} aria-hidden="true">{s.icon}</div>
-              <h3 className={styles.name}>{s.name}</h3>
-              <p className={styles.desc}>{s.desc}</p>
+              {s.image && (
+                <div className={styles.cardImage}>
+                  <img src={s.image} alt={s.name} loading="lazy" />
+                </div>
+              )}
+              <div className={styles.cardBody}>
+                <div className={styles.icon} aria-hidden="true">{s.icon}</div>
+                <h3 className={styles.name}>{s.name}</h3>
+                <p className={styles.desc}>{s.desc}</p>
+              </div>
             </div>
           ))}
         </div>

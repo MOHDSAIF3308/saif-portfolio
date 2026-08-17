@@ -1,25 +1,19 @@
 .list {
   max-width: 720px;
   margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  border: 1px solid var(--c-border);
+  border: 1.5px solid var(--c-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 
 .item {
   border-bottom: 1px solid var(--c-border);
 }
 
-.item:last-child {
-  border-bottom: none;
-}
+.item:last-child { border-bottom: none; }
 
-.item.isOpen {
-  background: var(--c-card);
-}
+.item.isOpen { background: #fafaff; }
 
 .question {
   display: flex;
@@ -38,18 +32,17 @@
   transition: background 0.15s;
 }
 
-.question:hover {
-  background: var(--c-card);
-}
+.question:hover { background: #fafaff; }
 
 .chevron {
   flex-shrink: 0;
   color: var(--c-text-3);
-  transition: transform 0.2s;
+  transition: transform 0.2s, color 0.2s;
 }
 
 .isOpen .chevron {
   transform: rotate(180deg);
+  color: var(--c-accent);
 }
 
 .answer {

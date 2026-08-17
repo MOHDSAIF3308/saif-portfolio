@@ -22,31 +22,37 @@ export const siteData = {
       icon: "🌐",
       name: "Business website",
       desc: "A clean, fast site that tells customers who you are and how to reach you.",
+      image: "/images/website-development.jpg",
     },
     {
       icon: "🛒",
       name: "Online store",
       desc: "Sell your products online with payments, cart, and order tracking.",
+      image: "/images/ecommerce-store.jpg",
     },
     {
       icon: "📱",
       name: "Mobile app",
       desc: "Android and iOS apps — for your customers or your internal team.",
+      image: "/images/mobile-app.jpg",
     },
     {
       icon: "📊",
       name: "Business dashboard",
       desc: "Track operations, staff, equipment, or inventory from one screen.",
+      image: "/images/business-dashboard.jpg",
     },
     {
       icon: "📋",
       name: "Booking system",
       desc: "Let customers book appointments or services directly from your site.",
+      image: "/images/appointment-booking.jpg",
     },
     {
       icon: "🔗",
       name: "API & integrations",
       desc: "Connect your tools — payments, WhatsApp, email, SMS — all automated.",
+      image: "/images/api-integration.jpg",
     },
   ],
 
