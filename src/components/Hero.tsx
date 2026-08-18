@@ -22,8 +22,8 @@ export default function Hero() {
 
         {/* Hero Title */}
         <h1 className={styles.heading}>
-          I build <span className={styles.gradientText}>websites</span> &{' '}
-          <span className={styles.gradientTextAlt}>mobile apps</span> for your business.
+          I build <span className={styles.gradientText}>websites, mobile apps,</span>{' '}
+          <span className={styles.gradientTextAlt}>software solutions & systems automation</span> for your business.
         </h1>
 
         {/* Subtitle */}

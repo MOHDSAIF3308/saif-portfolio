@@ -1,7 +1,7 @@
 export const siteData = {
   name: "Saif",
   title: "Web & App Developer",
-  tagline: "I build websites and apps for your business.",
+  tagline: "I build websites, mobile apps, software solutions & systems automation for your business.",
   subtitle:
     "No tech jargon. You describe what you need — I design it, build it, and make it live. Shops, clinics, labs, offices — I've done it all across India.",
   location: "Lucknow, UP",
